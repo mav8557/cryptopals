@@ -45,7 +45,7 @@ fn xor_by_key(mut data: Vec<u8>, key: u8) -> Vec<u8> {
 
 fn gen_frequency_map() -> HashMap<char, f64> {
     let mut res = HashMap::new();
-    let data = fs::read_to_string("src/howlsmovingcastle.txt").unwrap();
+    let data = fs::read_to_string("howlsmovingcastle.txt").unwrap();
 
     for c in data.chars() {
         if res.get_mut(&c).is_none() {
